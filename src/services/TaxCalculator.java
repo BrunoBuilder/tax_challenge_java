@@ -89,15 +89,15 @@ public class TaxCalculator {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("\nINCOME TAX REPORT");
-		sb.append("\nCONSOLIDATED INCOME:");
+		sb.append("\nINCOME TAX REPORT\n");
+		sb.append("\nCONSOLIDATED INCOME:\n");
 		sb.append("Wage tax: $ " + String.format("%.2f%n", wageTax()));
 		sb.append("Service tax: $ " + String.format("%.2f%n", serviceTax()));
 		sb.append("Capital gain tax: $ " + String.format("%.2f%n", capitalGainTax()));
-		sb.append("\nDEDUCTIONS: ");
+		sb.append("\nDEDUCTIONS:\n");
 		sb.append("Maximum deductible: $ " + String.format("%.2f%n", maximumDeductible()));
 		sb.append("Deductible expenses: $ " + String.format("%.2f%n", deductibleExpenses()));
-		sb.append("\nSUMMARY:");
+		sb.append("\nSUMMARY:\n");
 		sb.append("Total gross tax: $ " + String.format("%.2f%n", totalGrossTax()));
 		sb.append("Rebate: $ " + String.format("%.2f%n", rebate()));
 		sb.append("Tax due: $ " + String.format("%.2f%n", taxDue()));

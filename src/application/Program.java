@@ -3,6 +3,8 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
+import services.TaxCalculator;
+
 public class Program {
 
 	public static void main(String[] args) {
@@ -21,6 +23,10 @@ public class Program {
 		medExpenses = sc.nextDouble();
 		System.out.print("Educational expenses: $ ");
 		educExpenses = sc.nextDouble();
+		
+		TaxCalculator calc = new TaxCalculator(incSal, incServ, incCapGain, medExpenses, educExpenses);
+		
+		System.out.println(calc);
 		
 		sc.close();
 	}
