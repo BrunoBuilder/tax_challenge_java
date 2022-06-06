@@ -9,19 +9,18 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double annualIncomeSalary, annualIncomeServiceProvision, annualIncomeCapitalGain, 
-		medicalExpenses, educationalExpenses;
+		double incSal, incServ, incCapGain, medExpenses, educExpenses;
 		
 		System.out.print("Annual income with salary: $ ");
-		annualIncomeSalary = sc.nextDouble();
+		incSal = sc.nextDouble();
 		System.out.print("Annual income with service provision: $ ");
-		annualIncomeServiceProvision = sc.nextDouble();
+		incServ = sc.nextDouble();
 		System.out.print("Annual income with capital gain: $ ");
-		annualIncomeCapitalGain = sc.nextDouble();
+		incCapGain = sc.nextDouble();
 		System.out.print("Medical expenses: $ ");
-		medicalExpenses = sc.nextDouble();
+		medExpenses = sc.nextDouble();
 		System.out.print("Educational expenses: $ ");
-		educationalExpenses = sc.nextDouble();
+		educExpenses = sc.nextDouble();
 		
 		sc.close();
 	}
